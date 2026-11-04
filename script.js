@@ -4,7 +4,7 @@ const site = {
   startDate: "2026-06-13T00:00:00",
   headline: "days being yours.",
   subline: "A little corner of the internet, built just for you.",
-  music: "", // optional: put an mp3 in this folder and type its name, e.g. "song.mp3"
+  music: "lifetimne.mp3", // optional: put an mp3 in this folder and type its name, e.g. "song.mp3"
 
   timeline: [
     {
