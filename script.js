@@ -59,7 +59,7 @@ photos: [
 
   letter: [
     "Happy 5th Monthsary Affiee!! I just wanna tell you na mahal na mahal kita at hindi magbabago yon and sorry if ito lang nakayanan kong mabigay sayo ngayon pero babawi ako in the future.",
-    "5 months na tayo nak, limang buwan narin kitang tinittis. Joke lang syempre, aawayin mo nanaman ako eh. Thank you Affiee for always being there and supporting me, kahit minsan mahirap akong intindihin, nanjan kaparin sa tabi ko. I may not make you feel it affiee pero walang araw na hindi kita minahal ng sobra. Mwaaa <3",
+    "5 months na tayo nak, limang buwan narin kitang tinitiis. Joke lang syempre, aawayin mo nanaman ako eh. Thank you Affiee for always being there and supporting me, kahit minsan mahirap akong intindihin, nanjan kaparin sa tabi ko. I may not make you feel it affiee pero walang araw na hindi kita minahal ng sobra. Mwaaa <3",
     "1 Corinthians 13:4-7: 'Love is patient, love is kind. It does not envy, it does not boast, it is not proud... It always protects, always trusts, always hopes, always perseveres.'"
   ]
 };
