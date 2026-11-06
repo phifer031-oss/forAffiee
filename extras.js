@@ -15,11 +15,11 @@ const EXTRAS = {
   openWhen: [
     {
       title: "Open when you miss me",
-      text: "Close your eyes and take a deep breath. Kahit malayo ako, ikaw parin ang iniisip ko. Text me, baka iniisip din kita ngayon."
+      text: "Close your eyes and take a deep breath. Kahit malayo ako, ikaw parin ang iniisip ko. I will always be here beside you misis ko!."
     },
     {
       title: "Open when you're sad",
-      text: "Hindi mo kailangang maging okay palagi. I'm proud of you and I'm here. Kain ka muna ng something sweet, libre ko next time."
+      text: "Hindi mo kailangang maging okay palagi. I'm proud of you and I'm here. Kain ka muna ng something sweet, libre kita potcor next time, pero syempre ako uunbos NYAHAHAHA."
     },
     {
       title: "Open when you can't sleep",
@@ -27,7 +27,7 @@ const EXTRAS = {
     },
     {
       title: "Open when you need a laugh",
-      text: "Remember when we borrowed your Mom's pickup, tired na tired pero tawa parin tayo nang tawa? Ganun ko gustong ginugugol ang mga araw ko, kasama ka."
+      text: "K-kimchi?!?!."
     },
     {
       title: "Open on our monthsary",
