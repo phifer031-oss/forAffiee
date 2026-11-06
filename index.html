@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="extras.css">
 </head>
 <body>
 
@@ -43,6 +44,11 @@
   </section>
 
   <section>
+    <h2>Open When...</h2>
+    <div class="envs" id="envs"></div>
+  </section>
+
+  <section>
     <h2>Us</h2>
     <div class="photos" id="photos"></div>
   </section>
@@ -61,7 +67,18 @@
   <p id="lbCap"></p>
 </div>
 
+<div class="note" id="note" role="dialog" aria-label="Message">
+  <div class="paper">
+    <h3 id="noteTitle"></h3>
+    <p id="noteText"></p>
+    <small>tap anywhere to close</small>
+  </div>
+</div>
+
+<button class="mute" id="mute" hidden aria-label="Play or pause music">♪</button>
 <audio id="music" loop></audio>
+
 <script src="script.js"></script>
+<script src="extras.js"></script>
 </body>
 </html>
