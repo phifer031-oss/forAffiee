@@ -4,7 +4,7 @@ const site = {
   startDate: "2026-06-13T00:00:00",
   headline: "days being yours.",
   subline: "A little corner of the internet, built just for you.",
-  music: "lifetimne.mp3", // optional: put an mp3 in this folder and type its name, e.g. "song.mp3"
+  music: "lifetimne.mp3",
 
   timeline: [
     {
@@ -45,7 +45,7 @@ const site = {
   photos: [
     { src: "6086650274496844613.jpg", caption: "Our First Beach Together" },
     { src: "6280734001152595085.jpg", caption: "Picture Mo sa Idol mo" },
-    { src: "6280734001152595054.jpg", caption: "Us being Silly" },
+    { src: "6280734001152595054.jpg", caption: "Cutiee affiee" },
     { src: "WIN_20260926_19_31_45_Pro.jpg", caption: "Just us Loving each Other" }
   ],
 
@@ -56,7 +56,6 @@ const site = {
   ]
 };
 
-/* ---------- Rendering (you can leave this alone) ---------- */
 const $ = (id) => document.getElementById(id);
 const start = new Date(site.startDate);
 const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -68,7 +67,6 @@ $("headline").textContent = site.headline;
 $("subline").textContent = site.subline;
 $("sign").textContent = "Yours, " + site.myName;
 
-/* Opening screen */
 document.body.classList.add("locked");
 $("open").addEventListener("click", () => {
   $("gate").classList.add("gone");
@@ -80,7 +78,6 @@ $("open").addEventListener("click", () => {
   }
 });
 
-/* Counter, months, next monthsary */
 function tick() {
   const now = new Date();
   const s = Math.floor(Math.max(0, now - start) / 1000);
@@ -102,12 +99,10 @@ function monthsLine() {
 tick(); monthsLine();
 setInterval(tick, 1000);
 
-/* Timeline */
 $("timeline").innerHTML = site.timeline
   .map((e) => `<article><time>${e.date}</time><h3>${e.title}</h3><p>${e.text}</p></article>`)
   .join("");
 
-/* Floating hearts */
 function hearts(x, y) {
   if (reduceMotion) return;
   for (let i = 0; i < 7; i++) {
@@ -123,7 +118,6 @@ function hearts(x, y) {
   }
 }
 
-/* Reasons */
 let order = [], idx = -1;
 function shuffle() {
   order = site.reasons.map((_, i) => i).sort(() => Math.random() - 0.5);
@@ -146,7 +140,6 @@ $("next").addEventListener("click", (e) => {
   hearts(r.left + r.width / 2, r.top);
 });
 
-/* Photos (tap to enlarge) */
 const lb = $("lb");
 site.photos.forEach((p) => {
   const fig = document.createElement("figure");
@@ -183,5 +176,4 @@ site.photos.forEach((p) => {
 lb.addEventListener("click", () => lb.classList.remove("show"));
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") lb.classList.remove("show"); });
 
-/* Letter */
 $("letter").innerHTML = site.letter.map((t) => `<p>${t}</p>`).join("");
