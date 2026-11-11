@@ -1,17 +1,9 @@
-/* =========================================================
-   EDIT THIS BLOCK: your cute messages live here.
-   (Needs script.js to load first, which index.html already does.)
-   ========================================================= */
 const EXTRAS = {
-  // Shown when she taps the big day number 5 times
   secret: {
     title: "You found my secret ♥",
-    text: "I love you more than I can fit in one little website. Mwaaa! Rewrite this with your own words, Pj."
+    text: "I Love you so much affiee, no matter how much we argue or go though bad time, I would still choose to make it through with you. HAPPY MONTHSARY AFFIEE!!!!"
   },
 
-  // "Open when..." envelopes. Add or remove as you like.
-  // unlock: "monthsary"  -> opens on every monthsary (the 13th)
-  // unlock: "2026-12-25T00:00:00" -> opens on that date
   openWhen: [
     {
       title: "Open when you miss me",
@@ -37,11 +29,9 @@ const EXTRAS = {
   ]
 };
 
-/* ---------- Features (you can leave this alone) ---------- */
 (function () {
   const now = () => new Date();
 
-  /* Message popup */
   const note = $("note");
   function showNote(title, text) {
     $("noteTitle").textContent = title;
@@ -51,7 +41,6 @@ const EXTRAS = {
   note.addEventListener("click", () => note.classList.remove("show"));
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") note.classList.remove("show"); });
 
-  /* Open-when envelopes */
   function monthsaryDate() {
     const n = now(), day = start.getDate();
     const today = new Date(n.getFullYear(), n.getMonth(), n.getDate());
@@ -77,13 +66,11 @@ const EXTRAS = {
     $("envs").appendChild(b);
   });
 
-  /* Tap anywhere for hearts */
   document.addEventListener("click", (e) => {
     if (e.target.closest("button, figure, .lb, .note, .gate")) return;
     hearts(e.clientX, e.clientY);
   });
 
-  /* Boop the number; 5 taps reveals the secret */
   let taps = 0, timer;
   $("days").addEventListener("click", () => {
     const el = $("days");
@@ -101,7 +88,6 @@ const EXTRAS = {
     }
   });
 
-  /* Music button */
   const a = $("music"), mb = $("mute");
   if (site.music) {
     const sync = () => {
